@@ -142,7 +142,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: darkviolet;
+  background-image: url(../anime-grid/src/img/TODOS-ANIMES.png);
 }
 
 .title-container {
