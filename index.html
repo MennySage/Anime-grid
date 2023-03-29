@@ -3,7 +3,6 @@
   <head>
     <title>Anime Grid - login</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="index.js"></script>
   </head>
   <body>
     <div class="outh-container">
@@ -15,7 +14,8 @@
           </div>
           <h3 class="full-width text-left mt larger">Bem Vindo!</h3>
           <p class="mt small">
-            Digite seu e-mail a baixo para ter acesso a sua grade de animes.
+            Digite seu e-mail e senha a baixo para ter acesso a sua grade de
+            animes.
           </p>
           <label class="mt" for="input-email">E-mail</label>
           <input
@@ -25,9 +25,16 @@
             name="input-email"
             type="email"
           />
-          <button onclick="onClicklogin()" class="full-width mt larger">
-            Acessar
-          </button>
+          <label for="input-password">Senha</label>
+          <input
+            placeholder="Insira sua senha"
+            class="mt smaller"
+            id="input-password"
+            name="input-password"
+            type="password"
+            required
+          />
+          <button class="full-width mt larger">Acessar</button>
           <a href="src/pages/register/index.html" class="mt larger"
             >Não tem conta? Faça seu cadastro aqui.</a
           >
