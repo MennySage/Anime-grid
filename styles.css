@@ -5,6 +5,7 @@ body {
   margin: 0px;
   font-family: "Noto Sans", sans-serif;
   color: #010400;
+  overflow-x: hidden;
 }
 
 h1.titulo {
@@ -12,6 +13,7 @@ h1.titulo {
   font-size: 40px;
   font-weight: bolder;
   margin: 0px;
+  padding-left: 12px;
 }
 
 h1 {
@@ -154,7 +156,7 @@ input {
 
 .auth-content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   width: 480px;
   height: auto;
