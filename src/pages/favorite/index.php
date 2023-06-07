@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['login'])) {
+    header('Location: ../../../index.php');
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -16,7 +23,7 @@
           <div>
             <a class="link-navegacao">Favoritos</a>
           </div>
-          <a href="../../../index.html">
+          <a href="../home/index.php">
             <button class="home">Voltar</button>
           </a>
         </div>
@@ -43,34 +50,50 @@
           <h1 class="titulo">Noticias</h1>
         </div>
         <div class="notice-card-container">
-          <div class="notice-card">
-            <img
-              class="notice-img"
-              src="../../img/DS-NewTemp.png"
-              alt="DS-NewTemp"
-            />
-            <h2 class="notices">Demon Slayer 3ª temporada Chegou!</h2>
-            <p class="notice">
-              O fim da temporada 2 de Demon Slayer (Kimetsu no Yaiba) nos trouxe
-              a confirmação de que o popular anime terá uma terceira temporada.
-              O anúncio gerou hype entre os fãs que anseiam por ver a
-              continuação da jornada de Tanjiro Kamado e amigos. No dia
-              09/04/2023 tivemos o lançamento do primeiro episódio da nova
-              temporada "Vila dos Ferreiros."
-            </p>
-            <div class="notices-favorite-icons">
-              <img
-                class="notices-favorite-icons-img"
-                src="../../img/favorite.jpg"
-                alt=""
-              />
-            </div>
+        <?php
+    require_once '../conection/conn.php';
+    $idUsuario = $_SESSION['login'];
+    $sql = "SELECT n.* FROM noticia n JOIN favorito f ON n.id = f.id_noticia WHERE f.id_usuario = '$idUsuario'";
+    $result = $conn->query($sql);
+
+    $count = 0; // Contador de notícias
+
+    if ($result->num_rows > 0) {
+      while ($row = $result->fetch_object()) {
+        $descricao = $row->descricao;
+        $imagem = $row->imagem;
+        $nome_anime = $row->nome_anime;
+
+        if ($count % 2 == 0) {
+          // Abre uma nova linha para cada par de notícias
+          echo '<div class="notice-card-row">';
+        }
+        ?>
+        <div class="notice-card">
+          <img class="notice-img" src="../../img/<?php echo $imagem;?>" alt="DS-NewTemp" />
+          <h2 class="notices"><?php echo $nome_anime;?></h2>
+          <p class="notice"><?php echo $descricao;?></p>
+          <div class="notices-favorite-icons">
+            <img class="notices-favorite-icons-img" src="../../img/favorite.jpg" alt="" />
           </div>
-          <div class="notice-card"></div>
         </div>
-        <div class="notice-card-container">
-          <div class="notice-card"></div>
-          <div class="notice-card"></div>
+        <?php
+        if ($count % 2 == 1) {
+          // Fecha a linha após exibir dois cards
+          echo '</div>';
+        }
+
+        $count++;
+      }
+    } else {
+      echo "<p>Não há notícias favoritadas.</p>";
+    }
+
+    // Verifica se a última linha ficou com apenas um card e fecha a linha
+    if ($count % 2 == 1) {
+      echo '</div>';
+    }
+    ?>
         </div>
       </section>
     </div>
@@ -83,4 +106,4 @@
       </div>
     </footer>
   </body>
-</html>
+</

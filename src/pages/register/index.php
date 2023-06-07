@@ -1,3 +1,16 @@
+<?php
+  require_once '../conection/conn.php';
+  if(isset($_POST['input-email']) and !empty($_POST['input-email'])){
+    $nome = $_POST['input-name'];
+    $email = $_POST['input-email'];
+    $senha = $_POST['input-password'];
+
+    $sql = "INSERT INTO usuario VALUES (NULL, '$nome','$email','$senha')";
+    $exec = $conn->query($sql);
+    header('Location: ../../../index.php');
+
+}
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -16,14 +29,14 @@
           <p class="mt small">
             Insira sua senha e seu e-mail para ter acesso a sua grade de animes.
           </p>
-          <form id="form-register" class="mt">
-            <label for="input-password">Senha</label>
+          <form id="form-register" class="mt" method="post">
+          <label for="input-name">Nome</label>
             <input
               placeholder="Insira sua senha"
               class="mt smaller"
-              id="input-password"
-              name="input-password"
-              type="password"
+              id="input-name"
+              name="input-name"
+              type="text"
               required
             />
             <label class="mt" for="input-email">E-mail</label>
@@ -35,11 +48,21 @@
               type="email"
               required
             />
+            <label for="input-password">Senha</label>
+            <input
+              placeholder="Insira sua senha"
+              class="mt smaller"
+              id="input-password"
+              name="input-password"
+              type="password"
+              required
+            />
+            
             <button type="submit" class="full-width mt larger">
               cadastrar
             </button>
           </form>
-          <a href="../../../index.html" class="mt larger"
+          <a href="../../../index.php" class=" mt larger"
             >Já possui uma conta? Faça seu login</a
           >
         </div>

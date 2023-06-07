@@ -19,7 +19,8 @@ diretor varchar(45)
 
 
 create table noticia( 
-id int auto_increment primary key, descricao text, 
+id int auto_increment primary key, 
+descricao text, 
 data date, 
 hora time, 
 duracao varchar (45), 
@@ -47,3 +48,12 @@ Primary key (id_usuario, nome_anime),
 Foreign key (id_usuario) references usuario(id),
 Foreign key (nome_anime) references anime(nome)
 );
+
+alter table noticia modify duracao text;
+
+create user 'AnimeGrid'@'localhost' identified by 'AnimeGrid';
+show grants for 'AnimeGrid'@'localhost';
+grant all on animegrid to 'AnimeGrid'@'localhost';
+
+create view anime_noticia as select a.nome, a.studio, a.genero, a.diretor, n.descricao, n.data, n.hora, n.duracao
+from anime as a inner join noticia as n on n.nome_anime = a.nome group by a.nome

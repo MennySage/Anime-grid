@@ -91,6 +91,7 @@ h2.notices {
 
 .notice-card {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   width: 550px;
