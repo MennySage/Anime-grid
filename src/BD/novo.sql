@@ -47,25 +47,25 @@ insert into anime values
 
 insert into noticia (descricao, data, hora,imagem, nome_anime) values
 ('Anime ganhará 4 novos episódios inéditos:
-O site oficial do anime de Naruto anunciou nesta quinta-feira (9) que o mesmo receberá quatro novos episódios inéditos a partir de setembro para comemorar seu 20º aniversário.','2023-03-09','20:30:10','noticia 1','Naruto'),
+O site oficial do anime de Naruto anunciou nesta quinta-feira (9) que o mesmo receberá quatro novos episódios inéditos a partir de setembro para comemorar seu 20º aniversário.','2023-03-09','20:30:10','noticia1.png','Naruto'),
 ('Pokémon Horizons receberá um mangá Shoujo:
-A edição de maio da revista Ciao da Shogakukan anunciou nesta segunda-feira que Kahori Orito lançará um novo mangá baseado em Liko, a protagonista feminina do novo anime Pokémon Horizons.','2023-04-03','11:25:40','noticia 2','Pokemon'),
+A edição de maio da revista Ciao da Shogakukan anunciou nesta segunda-feira que Kahori Orito lançará um novo mangá baseado em Liko, a protagonista feminina do novo anime Pokémon Horizons.','2023-04-03','11:25:40','noticia2.png','Pokemon'),
 ('Mensagem escondida dos animadores é revelada pelos fãs:
- episódio 1062 de One Piece chamou muita atenção por fazer uma incrível adaptação e animação para a luta de Zoro e King. Além disso, os animadores da Toei Animation também esconderam uma mensagem secreta e hilária nesse episódio escrita em árabe "I love Pasta".','2023-05-31','14:00:00','noticia 3','One Piece'),
+ episódio 1062 de One Piece chamou muita atenção por fazer uma incrível adaptação e animação para a luta de Zoro e King. Além disso, os animadores da Toei Animation também esconderam uma mensagem secreta e hilária nesse episódio escrita em árabe "I love Pasta".','2023-05-31','14:00:00','noticia3.png','One Piece'),
 ('Mitsuri Kanroji recebe vídeo comemorativo do seu aniversário:
-Mitsuri Kanroji de Demon Slayer: Kimetsu no Yaiba fez aniversário nesta quinta-feira (dia 1 de junho), e a Shonen Jump lançou um vídeo especial para comemorar a ocasião. O vídeo chamou bastante atenção dos fãs da Hashira do Amor, já que ela está sendo uma das personagens principais na nova temporada do anime.','2023-06-02','10:00:50','noticia 4','Kimetsu no Yaiba'),
+Mitsuri Kanroji de Demon Slayer: Kimetsu no Yaiba fez aniversário nesta quinta-feira (dia 1 de junho), e a Shonen Jump lançou um vídeo especial para comemorar a ocasião. O vídeo chamou bastante atenção dos fãs da Hashira do Amor, já que ela está sendo uma das personagens principais na nova temporada do anime.','2023-06-02','10:00:50','noticia4.png','Kimetsu no Yaiba'),
 ('Anime ganha novo teaser e imagem:
-O evento Jump Festa ’22 revelou um novo teaser e uma nova imagem com o visual do anime Hell’s Paradise: Jigokuraku.','2021-12-19','15:22:10','noticia 5','Jigokuraku'),
+O evento Jump Festa ’22 revelou um novo teaser e uma nova imagem com o visual do anime Hell’s Paradise: Jigokuraku.','2021-12-19','15:22:10','noticia5.png','Jigokuraku'),
 ('Budokai Tenkaichi – Novo jogo da franquia é anunciado!:
-Um novo jogo da franquia Dragon Ball Z: Budokai Tenkaichi está em produção, a Bandai Namco Entertainment divulgou essa informação através de um vídeo durante divulgado o evento Dragon Ball Games Battle Hour 2023.','2023-03-06','12:50:00','noticia 6','Dragon ball Z'),
+Um novo jogo da franquia Dragon Ball Z: Budokai Tenkaichi está em produção, a Bandai Namco Entertainment divulgou essa informação através de um vídeo durante divulgado o evento Dragon Ball Games Battle Hour 2023.','2023-03-06','12:50:00','noticia6.png','Dragon ball Z'),
 ('Attack on Titan – Americana usa IA para criar marido inspirado em Eren Yeager :
-Uma americana de Nova York chamada Rosanna Ramos criou um “marido” para ela inspirado no protagonista de Attack on Titan, Eren Yeager. Usando o aplicativo de inteligência artificial, Replika, ela criou o seu modelo ideal como marido dos sonhos.','2023-06-05','08:30:00','noticia 7','Attack on Titan'),
+Uma americana de Nova York chamada Rosanna Ramos criou um “marido” para ela inspirado no protagonista de Attack on Titan, Eren Yeager. Usando o aplicativo de inteligência artificial, Replika, ela criou o seu modelo ideal como marido dos sonhos.','2023-06-05','08:30:00','noticia7.png','Attack on Titan'),
 ('Mangá da autora de Fullmetal Alchemist ganha adaptação para anime:
-Foi anunciado que o mangá Hyakushou Kizoku ( The Peasant Noble ) da autora Hiromu Arakawa ( Fullmetal Alchemist ) vai ganhar adaptação para anime. De acordo com informações, o anúncio chegou durante um evento de exibição do mangá realizado na Universidade de Agricultura de Tóquio.','2022-10-27','14:40:08','noticia 8','Fullmetal Alchemist'),
+Foi anunciado que o mangá Hyakushou Kizoku ( The Peasant Noble ) da autora Hiromu Arakawa ( Fullmetal Alchemist ) vai ganhar adaptação para anime. De acordo com informações, o anúncio chegou durante um evento de exibição do mangá realizado na Universidade de Agricultura de Tóquio.','2022-10-27','14:40:08','noticia8.png','Fullmetal Alchemist'),
 ('Anime ganha 7ª temporada:
-É oficial, o anime Boku no Hero Academia ( My Hero Academia ) teve sua 7ª temporada divulgada. De acordo com informações que chegaram junto com a notícia, um novo teaser que detalha a novidade.','2023-03-25','22:10:21','noticia 9','Boku no Hero Academia'),
+É oficial, o anime Boku no Hero Academia ( My Hero Academia ) teve sua 7ª temporada divulgada. De acordo com informações que chegaram junto com a notícia, um novo teaser que detalha a novidade.','2023-03-25','22:10:21','noticia9.png','Boku no Hero Academia'),
 ('Site indica que o mangá irá ser cancelado em breve:
-Uma recente atualização do site Weekly Shonen Jump sugere que o mangá de Hunter x Hunter do autor Yoshihiro Togashi pode ter sido cancelado. De acordo com o site oficial da revista, o mangá de Hunter X Hunter migrou de categoria, de obra em “serialização” passando para a categoria de “serialização arquivada”.','2023-02-19','13:50:00','noticia 10','Hunter x Hunter');
+Uma recente atualização do site Weekly Shonen Jump sugere que o mangá de Hunter x Hunter do autor Yoshihiro Togashi pode ter sido cancelado. De acordo com o site oficial da revista, o mangá de Hunter X Hunter migrou de categoria, de obra em “serialização” passando para a categoria de “serialização arquivada”.','2023-02-19','13:50:00','noticia10.png','Hunter x Hunter');
 
 
 create user 'AnimeGrid'@'localhost' identified by 'AnimeGrid';
