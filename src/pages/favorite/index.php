@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['login'])){
+        header('Location: ../../../index.php');
+    }
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -16,7 +22,7 @@
           <div>
             <a class="link-navegacao">Favoritos</a>
           </div>
-          <a href="../../../index.html">
+          <a href="../home/index.php">
             <button class="home">Voltar</button>
           </a>
         </div>

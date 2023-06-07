@@ -39,7 +39,7 @@
               cadastrar
             </button>
           </form>
-          <a href="../../../index.html" class="mt larger"
+          <a href="../../../index.php" class="mt larger"
             >Já possui uma conta? Faça seu login</a
           >
         </div>

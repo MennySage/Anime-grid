@@ -16,9 +16,9 @@
           <div>
             <a class="link-navegacao">Noticias</a>
             <a class="link-navegacao">Sobre nós</a>
-            <a class="link-navegacao">Favoritos</a>
+            <a href="../favorite/index.php" class="link-navegacao">Favoritos</a>
           </div>
-          <a href="../../../index.html">
+          <a href="../../../index.php">
             <button class="home">Sair</button>
           </a>
         </div>

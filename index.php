@@ -1,3 +1,25 @@
+<?php
+    if(isset($_POST['email']) and !empty($_POST['email'])){
+        $email = $_POST['input-email'];
+        $senha = $_POST['input-password'];
+
+        require_once 'src/pages/conection/conn.php';
+        $sql = "SELECT * FROM usuario WHERE email='$email' and senha='$senha'";
+        $exec = $conn->query($sql);
+        if($exec->num_rows > 0){
+            session_start();
+            while ($linhas = $exec->fetch_object()){
+                $_SESSION['login'] = $linhas->email;
+                $_SESSION['nome'] = $linhas->email;
+            }
+            header('Location: src/pages/home/index.php');
+        }else{
+            header('Location: login.php?msg=1');
+        }
+
+    }
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -35,7 +57,7 @@
             required
           />
           <button class="full-width mt larger">Acessar</button>
-          <a href="src/pages/register/index.html" class="mt larger"
+          <a href="src/pages/register/index.php" class="mt larger"
             >Não tem conta? Faça seu cadastro aqui.</a
           >
         </div>
